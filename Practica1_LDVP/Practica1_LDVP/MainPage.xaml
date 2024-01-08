@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica1_LDVP.MainPage">
+    
+    <StackLayout Padding="10,10,10,10">
+        <ScrollView>
+            <Grid>
+            <BoxView Color="Accent"
+         WidthRequest="150"
+         HeightRequest="150"
+         HorizontalOptions="Center"
+            Grid.Row="0"
+            Grid.Column="0"/>
+
+        <Ellipse Fill="lightpink"
+         WidthRequest="150"
+         HeightRequest="50"
+         HorizontalOptions="Center"
+                 Grid.Row="0"
+                 Grid.Column="1"/>
+
+        <Image Source="https://aka.ms/campus.jpg"
+        Aspect="AspectFit"
+        HorizontalOptions="Center"
+               Grid.Row="1"
+               Grid.Column="0"/>
+        
+         <Label Text="Hello, Xamarin.Forms!"
+        FontSize="Large"
+        FontAttributes="Bold"
+        HorizontalTextAlignment="Center" 
+                Grid.Row="1"
+                Grid.Column="1"
+                Padding="0,50,0,0"/>
+
+            <!--LINEA-->
+            <Line X1="40"
+         Y1="0"
+         X2="0"
+         Y2="120"
+         Stroke="purple"
+         HorizontalOptions="Center" 
+                  Grid.Row="2"
+                  Grid.Column="0"/>
+            <!--PATH-->
+            <Path Stroke="Black"
+            Aspect="Uniform"
+            HorizontalOptions="Center"
+            HeightRequest="100"
+            WidthRequest="100"
+            Data="M13.9,16.2
+            L32,16.2 32,31.9 13.9,30.1Z
+            M0,16.2
+            L11.9,16.2 11.9,29.9 0,28.6Z
+            M11.9,2
+            L11.9,14.2 0,14.2 0,3.3Z
+            M32,0
+            L32,14.2 13.9,14.2 13.9,1.8Z" 
+                  Grid.Row="2"
+                  Grid.Column="1"/>
+            <!--POLIGONO-->
+            <Polygon Points="0 48, 0 144, 96 150, 100 0, 192 0, 192 96, 50 96, 48 192, 150 200 144 48"
+             Fill="Blue"
+             Stroke="Red"
+             StrokeThickness="3"
+             HorizontalOptions="Center" 
+                     Grid.Row="3"
+                     Grid.Column="0"/>
+            <!--LINEAS-->
+            <Polyline Points="0,0 10,30, 15,0 18,60 23,30 35,30 40,0
+                  43,60 48,30 100,30"
+                  Stroke="Red"
+                  HorizontalOptions="Center"
+                      Grid.Row="3"
+                      Grid.Column="1"
+                      Margin="0,50,0,0"/>
+            <!--RECTANGULO-->
+            <Rectangle Fill="coral"
+               WidthRequest="150"
+               HeightRequest="50"
+               HorizontalOptions="Center" 
+                       Grid.Row="4"
+                       Grid.Column="0"/>
+            <!--BUSQUEDA-->
+            <WebView Source="https://learn.microsoft.com/xamarin/"
+                     VerticalOptions="FillAndExpand" 
+                     Grid.Row="4"
+                     Grid.Column="1"/>
+
+            <Button Text="Click Me!"
+                    Font="Large"
+                    BorderWidth="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Grid.Row="5"
+                    Grid.Column="0"/>
+
+            <ImageButton Source="https://i.ibb.co/W60X7KN/images.jpg"
+                     HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand"
+                     Grid.Row="5"
+                     Grid.Column="1"/>  
+
+            <RadioButton Content="Piña"
+                         Grid.Row="6"
+                         Grid.Column="0"
+                             />
+            <SearchBar Placeholder="Enter search term"
+                        Grid.Row="6"
+                        Grid.Column="1"/>
+               
+                   
+
+                <CheckBox IsChecked="true"
+                  HorizontalOptions="Center"
+                  VerticalOptions="CenterAndExpand" 
+                          Grid.Row="7"
+                          Grid.Column="0"/>
+
+                <Slider Minimum="0"
+                    Maximum="100"
+                    VerticalOptions="CenterAndExpand" 
+                        Grid.Row="7"
+                        Grid.Column="1"/>
+
+                <Stepper Minimum="0"
+                     Maximum="10"
+                     Increment="0.1"
+                     HorizontalOptions="Center"
+                     VerticalOptions="CenterAndExpand" 
+                         Grid.Row="8"
+                         Grid.Column="0"/>
+
+                <Switch IsToggled="false"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" 
+                        Grid.Row="8"
+                        Grid.Column="1"/>
+
+                <DatePicker Format="D"
+                    VerticalOptions="CenterAndExpand" 
+                            Grid.Row="9"
+                            Grid.Column="0"/>
+
+                <TimePicker Format="T"
+                    VerticalOptions="CenterAndExpand" 
+                            Grid.Row="9"
+                            Grid.Column="1"/>
+
+                <Entry Keyboard="Email"
+                   Placeholder="Enter email address"
+                   VerticalOptions="CenterAndExpand"
+                       Grid.Row="10"
+                       Grid.Column="0"/>
+
+                <Editor VerticalOptions="FillAndExpand" 
+                        Grid.Row="10"
+                        Grid.Column="1"/>
+
+                <ActivityIndicator IsRunning="True"
+                   VerticalOptions="CenterAndExpand" 
+                                   Grid.Row="11"
+                                   Grid.Column="0"/>
+
+                <ProgressBar Progress=".5"
+             VerticalOptions="CenterAndExpand" 
+                             Grid.Row="11"
+                             Grid.Column="1"/>
+
+                
+
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
